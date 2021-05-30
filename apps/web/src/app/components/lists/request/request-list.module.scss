@@ -1,0 +1,30 @@
+.requestListContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+@media screen and (max-width: 1500px) {
+  .requestListContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .requestListContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .requestListContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .requestListContainer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}
